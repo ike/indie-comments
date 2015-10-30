@@ -1,11 +1,8 @@
-var fs = require('fs');
-var path = require('path');
 var express = require('express');
-var bodyParser = require('body-parser');
+var path = require('path');
 var enchilada = require('enchilada');
 var app = express();
 var root = path.resolve('.');
-var ipfsAPI = require('ipfs-api');
 
 // Logging
 app.use(function(req, res, next) {
