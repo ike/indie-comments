@@ -1,0 +1,45 @@
+{
+  "name": "indie-comments",
+  "version": "1.0.0",
+  "description": "an independent, distributed comment system based on IPFS",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ike/indie-comments.git"
+  },
+  "keywords": [
+    "IPFS",
+    "indieweb"
+  ],
+  "author": "Isaac Lewis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ike/indie-comments/issues"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "reactify",
+        {
+          "es6": true
+        }
+      ]
+    ]
+  },
+  "homepage": "https://github.com/ike/indie-comments#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "enchilada": "^0.13.0",
+    "express": "^4.13.3",
+    "fs": "0.0.2",
+    "ipfs-api": "^2.5.1",
+    "path": "^0.12.7",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1",
+    "reactify": "^1.1.1"
+  }
+}
